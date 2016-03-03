@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouNow</title>
+    <meta charset="utf-8" />
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div class="app">
+      <aside>
+        <form id="searchform" onkeypress="return runScriptBuscar(event)">
+          <div class="info">
+            <p>Selecciona lo que buscas:</p>
+          </div>
+          <select name="locale" id="locale">
+            <option value="ww">Mundo</option>
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
+
+          <select name="viewers" id="viewers">
+            <option value="5">viendo:</option>
+            <option value="200">200</option>
+            <option value="150">150</option>
+            <option value="125">125</option>
+            <option value="100">100</option>
+            <option value="75">75</option>
+            <option value="25">25</option>
+            <option value="10">10</option>
+          </select>
+
+          <select name="level" id="level">
+            <option value="100">Nivel:</option>
+            <option value="20">20</option>
+            <option value="15">15</option>
+            <option value="10">10</option>
+            <option value="5">5</option>
+          </select>
+
+          <select name="order" id="order">
+            <option value="321">Orden:</option>
+            <option value="123">ASC</option>
+            <option value="321">DESC</option>
+          </select>
+          <div class="info-mini"><p>Pulsa clik para buscar.</p></div>
+          <button class="btn-buscar" onclick="goBuscar();" type="submit" value="Search">Buscar</button>
+          <div class="tags-check">
+            <span>Evitar etiquetas:</span>
+            <label for="guys"><input type="checkbox" name="tags[]" value="guys" id="guys" /> #guys</label>
+            <label for="girls"><input type="checkbox" name="tags[]" value="girls" id="girls" /> #girls</label>
+            <label for="dance"><input type="checkbox" name="tags[]" value="dance" id="dance" /> #dance</label>
+            <label for="bored"><input type="checkbox" name="tags[]" value="bored" id="bored" /> #bored</label>
+            <label for="truthordare"><input type="checkbox" name="tags[]" value="truthordare" id="truthordare" /> #truthordare</label>
+            <label for="ask_questions"><input type="checkbox" name="tags[]" value="ask_questions" id="ask_questions" /> #ask_questions</label>
+            <label for="advice"><input type="checkbox" name="tags[]" value="advice" id="advice" /> #advice</label>
+            <label for="humor"><input type="checkbox" name="tags[]" value="humor" id="humor" /> #humor</label>
+            <div class="info">
+              <p></p>
+            </div>
+          </div>
+        </form>
+      </aside>
+      <div class="wrapper">
+        <!--<div id="broadcasts"></div>-->
+        <div id="results">
+          <div class="welcome-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, et illum nobis tempora. Qui veniam totam, sunt at eum, ea eius nesciunt consequuntur libero porro reiciendis, repudiandae doloribus modi voluptatum.</p>
+          </div>
+        </div>
+        <div id="number"></div>
+        <!--<div id="player"></div>-->
+      </div>
+    </div>
+    <script>
+      function goBuscar() {
+      }
+      function runScriptBuscar(e) {
+        if(e.keyCode == 13) {
+          goBuscar();
+        }
+      }
+    </script>
+  </body>
+</html>
