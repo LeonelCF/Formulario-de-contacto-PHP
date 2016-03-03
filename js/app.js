@@ -137,7 +137,7 @@ function TheStreams(json)
 
         var box = document.createElement('div');
         box.classList.add('result');
-        box.innerHTML = '<a href="http://www.younow.com/' + stream.user.profileUrlString + '" target="_blank"><img src="http://cdn2.younow.com/php/api/getBroadcastThumb/broadcastId=' + stream.broadcastId + '" /></a>'
+        box.innerHTML = '<a href="http://www.younow.com/' + stream.user.profileUrlString + '" target="_blank"><img src="http://cdn2.younow.com/php/api/getBroadcastThumb/broadcastId=' + stream.broadcastId + '" title="' + stream.user.profileUrlString + '"/></a>'
                        + ' <div class="tags-localizacion"><span class="tags-cont"> #' + stream.tags + '</span> - '
                        + '<span class="localizacion">' + stream.location.country + '</span></div>'
                        + '<div class="nivel-user"><i class="icon-star"></i> ' + stream.user.userLevel

@@ -131,8 +131,8 @@ select option {
 .result {
   display: inline-block;
   width: 168px;
-  height: 186px;
-  margin: 5px;
+  height: auto;
+  margin: 3px;
   overflow: hidden;
 }
 
@@ -141,11 +141,25 @@ select option {
   height: 126px;
 }
 
+.tags-localizacion {
+    height: 19px;
+    transform: translateY(-25px);
+    position: absolute;
+    color: aliceblue;
+    padding-left: 10px;
+}
+
 .nivel-user {
   font-weight: 600;
   text-align: left;
   height: 19px;
   overflow: hidden;
+}
+
+.vivo-viendo {
+    overflow: hidden;
+    height: 19px;
+    color: #ccc;
 }
 
 .vivo-viendo .icon-controller-record {
